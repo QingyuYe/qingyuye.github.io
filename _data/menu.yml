@@ -1,17 +1,14 @@
 entries:
 
-  - title: 读论文
-    url: /archive-reading.html
+  - title: <a href="/archive-reading.html">读论文</a>
     post_list:
       category: 读论文
 
-  - title: 分析实况
-    url: /archive-analysis.html
+  - title: <a href="/archive-analysis.html">分析实况</a>
     post_list:
       category: 分析实况
 
-  - title: 碎碎念
-    url: /archive-notes.html
+  - title: <a href="/archive-notes.html">碎碎念</a>
     post_list:
       category: 碎碎念
 
