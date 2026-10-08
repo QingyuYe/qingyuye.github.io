@@ -2,14 +2,57 @@
 layout: default
 ---
 
-{%-include back_link.html-%}
+<article class="article-page">
 
-<article>
-  <p class="post-meta">
-    <time datetime="{{ page.date }}">{{ page.date | date: site.theme_config.date_format }}</time>
-  </p>
-  
-  <h1>{{ page.title }}</h1>
+  <div class="article-meta">
+    <span class="type-badge">
+      {{ page.type | default: '未分类' | escape }}
+    </span>
 
-  {{ content }}
+    <time datetime="{{ page.date | date: '%Y-%m-%d' }}">
+      {{ page.date | date: '%Y-%m-%d' }}
+    </time>
+  </div>
+
+  <h1 class="article-title">
+    {{ page.title | escape }}
+  </h1>
+
+  {% if page.summary %}
+    <p class="article-summary">
+      {{ page.summary | escape }}
+    </p>
+  {% endif %}
+
+  {% if page.tags.size > 0 %}
+
+    {% assign sorted_tags = site.tags | sort %}
+
+    <div class="post-tags article-tags">
+      {% for tag in page.tags %}
+        {% for entry in sorted_tags %}
+          {% if entry[0] == tag %}
+            <a href="{{ '/tags/' | relative_url }}#tag-{{ forloop.index }}">
+              #{{ tag | escape }}
+            </a>
+            {% break %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </div>
+
+  {% endif %}
+
+  <div class="article-divider"></div>
+
+  <div class="markdown-body article-body">
+    {{ content }}
+  </div>
+
+  <div class="article-bottom">
+    <a href="{{ '/' | relative_url }}">
+      ← Back to Home
+    </a>
+  </div>
+
 </article>
