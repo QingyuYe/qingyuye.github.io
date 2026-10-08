@@ -1,21 +1,73 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: "en" }}">
-  {%- include head.html -%}
-  <body a="{{ site.theme_config.appearance | default: "auto" }}">
-    <main class="page-content" aria-label="Content">
-      <div class="w">
-        {{ content }}
+<html lang="{{ site.lang | default: 'zh-CN' }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% seo %}
+
+  <link rel="icon" href="{{ '/logo.png' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+  <link rel="alternate" type="application/rss+xml"
+        title="{{ site.title | escape }}"
+        href="{{ '/feed.xml' | relative_url }}">
+</head>
+
+<body>
+  <div class="site-shell">
+
+    <header class="site-header">
+      <div class="site-identity">
+        <a class="site-title" href="{{ '/' | relative_url }}">
+          {{ site.title | escape }}
+        </a>
+
+        <p class="site-description">
+          {{ site.description | escape }}
+        </p>
       </div>
-    </main>
 
-    {%-if site.goat_counter and jekyll.environment == "production"-%}
-      {%-include goat_counter.html-%}
-    {%-endif-%}
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="{{ '/' | relative_url }}"
+           {% if page.url == '/' %}aria-current="page"{% endif %}>
+          HOME
+        </a>
 
-    {% if page.custom_js %}
-      {% for js_file in page.custom_js %}
-        <script type="text/javascript" src="{{ site.baseurl }}/assets/js/{{ js_file }}.js"></script>
-      {% endfor %}
-    {% endif %}
-  </body>
+        <a href="{{ '/about/' | relative_url }}"
+           {% if page.url == '/about/' %}aria-current="page"{% endif %}>
+          ABOUT
+        </a>
+
+        <a href="{{ '/tags/' | relative_url }}"
+           {% if page.url == '/tags/' %}aria-current="page"{% endif %}>
+          TAGS
+        </a>
+      </nav>
+    </header>
+
+    <div class="site-grid{% if page.hide_sidebar %} site-grid-single{% endif %}">
+
+      <main class="main-content">
+        {{ content }}
+      </main>
+
+      {% unless page.hide_sidebar %}
+        <aside class="sidebar">
+          {% include sidebar.html %}
+        </aside>
+      {% endunless %}
+
+    </div>
+
+    <footer class="site-footer">
+      <span>© {{ site.time | date: '%Y' }} {{ site.author }}</span>
+      <span>
+        <a href="{{ '/' | relative_url }}">Home</a>
+        ·
+        <a href="https://github.com/QingyuYe">GitHub</a>
+      </span>
+    </footer>
+
+  </div>
+</body>
 </html>
