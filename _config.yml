@@ -16,13 +16,9 @@ remote_theme: riggraz/no-style-please
 
 theme_config:
   appearance: "light"
-
   back_home_text: ".."
-
   date_format: "%Y-%m-%d"
-
   show_description: true
-
   lowercase_titles: false
 
 plugins:
