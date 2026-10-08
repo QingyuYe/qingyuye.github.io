@@ -1,13 +1,10 @@
 ---
 layout: home
+title: Home
 ---
 
-记录生物信息学分析、单细胞组学研究与科研思考。
+欢迎来到 **Chi's Lab Notes**。
 
-这里主要记录：
+这里是我的个人科研笔记，主要记录生物信息学分析、单细胞与多组学研究、计算方法及科研过程中的思考。
 
-- 论文阅读与理解
-- 生物信息学分析过程
-- R / Python / Linux / HPC
-- 单细胞与多组学分析
-- 一些不那么正式的科研碎碎念
+主要涉及 **Bioinformatics / Single-cell Genomics / Computational Biology / AI for Biology**。
