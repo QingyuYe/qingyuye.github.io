@@ -1,0 +1,82 @@
+<section class="sidebar-section">
+
+  <h2 class="sidebar-title">
+    FEATURED TAGS
+  </h2>
+
+  {% assign sorted_tags = site.tags | sort %}
+
+  {% if sorted_tags.size > 0 %}
+
+    {% for entry in sorted_tags %}
+
+      {% assign tag_name = entry[0] %}
+      {% assign tag_posts = entry[1] %}
+
+      <div class="tag-group">
+
+        <div class="tag-group-header">
+
+          <a href="{{ '/tags/' | relative_url }}#tag-{{ forloop.index }}">
+            # {{ tag_name | escape }}
+          </a>
+
+          <span class="tag-count">
+            {{ tag_posts.size }}
+          </span>
+
+        </div>
+
+        <ul class="tag-post-list">
+
+          {% for post in tag_posts %}
+
+            <li>
+              <a href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+              </a>
+            </li>
+
+          {% endfor %}
+
+        </ul>
+
+      </div>
+
+    {% endfor %}
+
+  {% else %}
+
+    <p class="sidebar-empty">
+      暂无 Tags
+    </p>
+
+  {% endif %}
+
+</section>
+
+<section class="sidebar-section sidebar-about">
+
+  <h2 class="sidebar-title">
+    ABOUT ME
+  </h2>
+
+  <p>
+    Chi Zhou
+  </p>
+
+  <p class="sidebar-small">
+    Bioinformatics · Computational Biology
+  </p>
+
+  <p class="sidebar-small">
+    <a href="mailto:{{ site.email }}">
+      {{ site.email }}
+    </a>
+  </p>
+
+  <a class="sidebar-more" href="{{ '/about/' | relative_url }}">
+    More about me →
+  </a>
+
+</section>
