@@ -2,8 +2,14 @@
 layout: default
 ---
 
-{%-include back_link.html-%}
+<article class="static-page">
 
-<h1>{{ page.title }}</h1>
+  <h1 class="page-title">
+    {{ page.title | escape }}
+  </h1>
 
-{{ content }}
+  <div class="markdown-body">
+    {{ content }}
+  </div>
+
+</article>
