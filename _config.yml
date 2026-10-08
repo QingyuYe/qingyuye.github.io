@@ -15,7 +15,7 @@ favicon: "logo.png"
 remote_theme: riggraz/no-style-please
 
 theme_config:
-  appearance: "auto"
+  appearance: "light"
 
   back_home_text: ".."
 
