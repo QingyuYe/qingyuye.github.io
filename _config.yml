@@ -1,25 +1,37 @@
-title: Chi's Lab Notes
-author: Chi Zhou
-email: zhouchi24@mails.ucas.ac.cn
+title: "Chi's Lab Notes"
+author: "Chi Zhou"
+email: "zhouchi24@mails.ucas.ac.cn"
 
-url: https://qingyuye.github.io
+description: "Bioinformatics · Single-cell Genomics · Computational Biology"
+
+url: "https://qingyuye.github.io"
 baseurl: ""
 
-description: >
-  Bioinformatics · Single-cell Genomics · Computational Biology
+lang: "zh-CN"
+timezone: "Asia/Shanghai"
+
+remote_theme: riggraz/no-style-please
+
+markdown: kramdown
+highlighter: rouge
 
 permalink: /:slug.html
 
 favicon: "logo.png"
 
-remote_theme: riggraz/no-style-please
-
 theme_config:
   appearance: "light"
-  back_home_text: ".."
+  back_home_text: "Home"
   date_format: "%Y-%m-%d"
   show_description: true
   lowercase_titles: false
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
 
 plugins:
   - jekyll-feed
