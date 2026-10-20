@@ -1,3 +1,4 @@
+
 title: "Chi's Lab Notes"
 author: "Chi Zhou"
 email: "zhouchi24@mails.ucas.ac.cn"
@@ -12,8 +13,13 @@ timezone: "Asia/Shanghai"
 
 remote_theme: riggraz/no-style-please
 
+# Markdown 渲染
 markdown: kramdown
 highlighter: rouge
+
+kramdown:
+  input: GFM
+  hard_wrap: true
 
 permalink: /:slug.html
 
