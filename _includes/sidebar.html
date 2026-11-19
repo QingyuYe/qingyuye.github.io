@@ -1,3 +1,33 @@
+{% assign resource_files = site.static_files | sort: "path" | reverse %}
+{% assign resource_count = 0 %}
+
+<section class="sidebar-section sidebar-resources">
+  <h2 class="sidebar-title">
+    <a href="{{ '/resources/' | relative_url }}">RESOURCES</a>
+  </h2>
+
+  {% if resource_files.size > 0 %}
+    <ul class="tag-post-list">
+      {% for file in resource_files %}
+        {% assign asset_path = file.path | downcase %}
+        {% if asset_path contains "assets/resources/" and file.extname == ".pdf" %}
+          {% assign filename = file.path | split: "/" | last %}
+          {% assign date = filename | slice: 0, 10 %}
+          {% assign title = filename | remove_first: date | remove_first: "-" | remove_last: ".pdf" %}
+          {% assign pdf_path = "/assets/resources/" | append: filename %}
+          <li>
+            <a href="{{ pdf_path | relative_url }}">{{ date }} · {{ title }}</a>
+          </li>
+          {% assign resource_count = resource_count | plus: 1 %}
+          {% if resource_count == 5 %}{% break %}{% endif %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p class="sidebar-empty">暂无资料</p>
+  {% endif %}
+</section>
+
 <section class="sidebar-section">
 
   <h2 class="sidebar-title">
