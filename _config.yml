@@ -32,20 +32,10 @@ theme_config:
   show_description: true
   lowercase_titles: false
 
-collections:
-  resources:
-    output: true
-    permalink: /resources/:name/
-
 defaults:
   - scope:
       path: ""
       type: posts
-    values:
-      layout: post
-  - scope:
-      path: ""
-      type: resources
     values:
       layout: post
 
