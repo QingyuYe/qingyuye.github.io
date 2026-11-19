@@ -42,6 +42,11 @@
            {% if page.url == '/tags/' %}aria-current="page"{% endif %}>
           TAGS
         </a>
+
+        <a href="{{ '/resources/' | relative_url }}"
+           {% if page.url == '/resources/' %}aria-current="page"{% endif %}>
+          RESOURCES
+        </a>
       </nav>
     </header>
 
