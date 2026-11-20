@@ -1268,3 +1268,15 @@ Word → EndNote选项卡，具体版本可能显示EndNote 21等。
 13. [Zotero Word插件](https://www.zotero.org/support/word_processor_plugin_usage)
 14. [EndNote插入引用](https://docs.endnote.com/docs/endnote/2025/v1/windows/en/content/09word/finding_n_inserting_cites.htm)
 15. [EndNote悬挂缩进](https://supportcenter.clarivate.com/s/article/EndNote-Configuring-a-Hanging-Indent?language=en_US)
+
+相关图片：
+1. 摘要
+	1. ![2026-11-20-国科大 Word 学位论文模板搭建与使用手册UCAS Word Thesis Guide](/images/2026-11-20-%E5%9B%BD%E7%A7%91%E5%A4%A7%20Word%20%E5%AD%A6%E4%BD%8D%E8%AE%BA%E6%96%87%E6%A8%A1%E6%9D%BF%E6%90%AD%E5%BB%BA%E4%B8%8E%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8CUCAS%20Word%20Thesis%20Guide.png)  
+	2. 目录：  
+		1. ![2026-11-20-国科大 Word 学位论文模板搭建与使用手册UCAS Word Thesis Guide-1](/images/2026-11-20-%E5%9B%BD%E7%A7%91%E5%A4%A7%20Word%20%E5%AD%A6%E4%BD%8D%E8%AE%BA%E6%96%87%E6%A8%A1%E6%9D%BF%E6%90%AD%E5%BB%BA%E4%B8%8E%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8CUCAS%20Word%20Thesis%20Guide-1.png)  
+	3. 图表目录  
+		1. ![2026-11-20-国科大 Word 学位论文模板搭建与使用手册UCAS Word Thesis Guide-2](/images/2026-11-20-%E5%9B%BD%E7%A7%91%E5%A4%A7%20Word%20%E5%AD%A6%E4%BD%8D%E8%AE%BA%E6%96%87%E6%A8%A1%E6%9D%BF%E6%90%AD%E5%BB%BA%E4%B8%8E%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8CUCAS%20Word%20Thesis%20Guide-2.png)  
+	4. 正文：  
+		1. ![2026-11-20-国科大 Word 学位论文模板搭建与使用手册UCAS Word Thesis Guide-3](/images/2026-11-20-%E5%9B%BD%E7%A7%91%E5%A4%A7%20Word%20%E5%AD%A6%E4%BD%8D%E8%AE%BA%E6%96%87%E6%A8%A1%E6%9D%BF%E6%90%AD%E5%BB%BA%E4%B8%8E%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8CUCAS%20Word%20Thesis%20Guide-3.png)  
+	5. 参考文献  
+		1. ![2026-11-20-国科大 Word 学位论文模板搭建与使用手册UCAS Word Thesis Guide-4](/images/2026-11-20-%E5%9B%BD%E7%A7%91%E5%A4%A7%20Word%20%E5%AD%A6%E4%BD%8D%E8%AE%BA%E6%96%87%E6%A8%A1%E6%9D%BF%E6%90%AD%E5%BB%BA%E4%B8%8E%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8CUCAS%20Word%20Thesis%20Guide-4.png)
